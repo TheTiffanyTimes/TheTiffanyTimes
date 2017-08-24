@@ -1,42 +1,10 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
-    <script src="https://use.fontawesome.com/4823380be7.js"></script>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-</html>
-
-<body>
-
-  <header id="home">
-    <nav class="grid-spaceBetween">
-      <div class="socials col-12">
-        <a href="https://www.instagram.com/tiffany_janes/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/Thetiffanytimes-1131799556915920/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="mailto:hello@thetiffanytimes.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-      </div>
-      </div>
-      <div class="logo col">
-        <a href="index.html"><img src="images/logo.png" alt="my logo" /></a>
-      </div>
-      <div class="col">
-        <a href="about.html">About</a>
-      </div>
-      <div class="col">
-        <a href="blog.html">Blog</a>
-      </div>
-      <div class="col">
-        <a href="trainwithme.html">Train with me</a>
-      </div>
-      <div class="col">
-        <a href="workwithme.html">Work with me</a>
-      </div>
-    </nav>
-    <h1>The Tiffany Times</h1>
-    <h3>Motto/Quote goes here</h3>
-
-  </header>
+---
+layout: default
+title: Home
+Testimonials:
+  - name: Hive Tribe
+    Testimonial: Tiffany was professional and always smiling, we would be happy to work with her again 
+---
 
   <section id="about">
     <div class="border">
@@ -44,7 +12,7 @@
       <p>
         This is a litte about me and where I write a little blurb about me. To find out more you will need to click on the read more button.
       </p>
-      <a href="about.html" class+"button">Read more</a>
+      <a href="/about.html" class+"button">Read more</a>
     </div>
   </section>
 
@@ -55,93 +23,65 @@
         <p>
           Fuel the Body
         </p>
-        <a href="tiffanytrains.html" class+"button">Read more</a>
+        <a href="/tiffanytrains.html" class+"button">Read more</a>
       </div>
       <div>
         <h3>Tiffany Talks</h3>
         <p>
           Free the Mind
         </p>
-        <a href="tiffanytalks.html" class+"button">Read more</a>
+        <a href="/tiffanytalks.html" class+"button">Read more</a>
       </div>
       <div>
         <h3>Tiffany Travels</h3>
         <p>
           Feed the Soul
         </p>
-        <a href="tiffanytravels.html" class+"button">Read more</a>
+        <a href="/tiffanytravels.html" class+"button">Read more</a>
       </div>
   </section>
 
   <section id="latestblogposts" class="grid">
 
     <h2 class="col-12">Latest Blog Posts</h2>
+    {% for post in site.posts %}
 
-      <div class="col-4 border">
-        <img src="images/placeholder.jpg" />
-        <h3>The Time I ...Was a contestant on the Bachelor </h3>
-        <p>
-          Ever wondered what it's like to be a contestant on the Bachelor?
-        </p>
-        <a href="#" class="button">Read more</a>
+      <!-- stuff that you want to repeat for each post -->
+      <div class="col-4">
+        <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+        </div>
+        <h3> {{post.title}}</h3>
+        <p> {{post.excerpt}}</p>
+        <a href="{{post.url}}">Read More</a>
       </div>
-      <div class="col-4 border">
-        <img src="images/placeholder.jpg" />
-        <h3>The Time I ...learnt how to code</h3>
-        <p>
-          Coding is the language of today and a language that everyone can and should learn?
-        </p>
-        <a href="#" class="button">Read more</a>
-      </div>
-      <div class="col-4 border">
-        <img src="images/placeholder.jpg" />
-        <h3>The Time I ...Went to the Phillipines </h3>
-        <p>
-          At the top of my bucket list was the Phillipines so I was delighted to be offered the opportunity to fly over as part of a media tour
-        </p>
-        <a href="#?" class="button">Read more</a>
-      </div>
+
+      {% endfor %}
   </section>
 
   <section id="testimonials" class="grid">
     <div class="testimonials col-12">
       <h2>Testimonials</h2>
     </div>
+    {% for testimonials in site.testimonials %}
+    <div class=col-6>
+      <h3>{{name}}</h3>
+      <p>{{"testimonial"}}</p>
+    </div>
+    <div class=col-6>
+      <img src="/images/placeholder.jpg" />
+    </div>
+    <div class=col-6>
+      <img src="/images/placeholder.jpg" />
+    </div>
     <div class=col-6>
       <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
     </div>
     <div class=col-6>
-      <img src="images/placeholder.jpg" />
-    </div>
-    <div class=col-6>
-      <img src="images/placeholder.jpg" />
-    </div>
-    <div class=col-6>
       <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
     </div>
     <div class=col-6>
-      <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
+      <img src="/images/placeholder.jpg" />
     </div>
-    <div class=col-6>
-      <img src="images/placeholder.jpg" />
-    </div>
+      {% endfor %}
+
   </section>
-
-  <footer id="subscribe">
-    <h2>Subscribe</h2>
-    <form method="POST" action="http://formspree.io/hello@thetiffanytimes.com">
-      <input type="name" name="name" Placeholder="name">
-      <input type="email" name="email" placeholder="Your email">
-      <button type="submit">Subscribe</button>
-    </form>
-    <nav class="grid-spaceBetween">
-      <div class="socials col-12">
-        <a href="https://www.instagram.com/tiffany_janes/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/Thetiffanytimes-1131799556915920/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="mailto:hello@thetiffanytimes.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-      </div>
-    </nav>
-
-  </footer>
-</body>
-</html>

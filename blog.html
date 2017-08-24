@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<section id="latestblogposts" class="grid">
+
+  <h2 class="col-12">Latest Blog Posts</h2>
+  {% for post in site.posts %}
+
+    <!-- stuff that you want to repeat for each post -->
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+
+    {% endfor %}
+
+</section>
+
+<section id="latestblogposts" class="grid">
+
+  <h2 class="col-12">Featured Blog Posts</h2>
+  {% for post in site.posts %}
+
+    <!-- stuff that you want to repeat for each post -->
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+
+    {% endfor %}
+
+</section>
+
+<section id="latestblogposts" class="grid">
+
+  <h2 class="col-12">Blogs by Category</h2>
+  {% for post in site.posts %}
+
+    <!-- stuff that you want to repeat for each post -->
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+
+    {% endfor %}
+
+</section>

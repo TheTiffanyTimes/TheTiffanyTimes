@@ -1,0 +1,50 @@
+---
+layout: default
+Title: Blogpost
+---
+<section class="grid">
+
+  <div id="sidebar" class="col-3">
+
+    <div>
+      <h3>About Me</h3>
+      <p>
+        This is a litte about me and where I write a little blurb about me. To find out more you will need to click on the read more button.
+      </p>
+      <a href="/about.html" class="button">Read more</a>
+    </div>
+
+    <div class="featuredblogposts">
+      <h3>Featured Blog Post</h3>
+        <div>
+          <h4>Blog title 1</h4>
+          <img src="/images/placeholder.jpg" />
+        </div>
+        <div>
+          <h4>Blog title 2</h4>
+          <img src="/images/placeholder.jpg" />
+        </div>
+        <div>
+          <h4>Blog title 3</h4>
+          <img src="/images/placeholder.jpg" />
+        </div>
+    </div>
+
+    <div class="featuredtrainingvideos">
+      <h3>Featured Training Videos</h3>
+        <div>
+          <h4>Training Video 1</h4>
+          <img src="/images/placeholder.jpg" />
+        </div>
+    </div>
+  </div>
+
+    <div id="blogpost" class="col-9">
+      <h2>{{page.title}}</h2>
+      <tag>{{page.tags}}</tag>
+      <div>
+        <img src="{{page.image_path}}" />
+      </div>
+        {{content}}
+    </div>
+</section>

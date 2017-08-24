@@ -1,0 +1,102 @@
+---
+layout: default
+title: about
+image_path: /images/placeholder.jpg
+---
+<section id="instagramfeed">
+  <p>
+    instagram feed plugin
+  </p>
+  <!---plugin for instagram--->
+</section>
+
+<section id="whoiam" class="grid">
+  <div class="col-12">
+    <h2>Who I Am</h2>
+  </div>
+  <div class="col-6">
+    <div class="grid-image" style="background-image:url('{{page.image_path}}')">
+    </div>
+  </div>
+    <div class="col-6">
+      <p>
+        This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me.
+      </p>
+    </div>
+      <div class="col-6">
+        <p>
+          This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me.
+        </p>
+      </div>
+      <div class="col-6">
+        <div class="grid-image" style="background-image:url('{{page.image_path}}')">
+        </div>
+      </div>
+</section>
+
+<section id="whatido">
+  <h2>What I Do</h2>
+    <div>
+      <h3>Tiffany Trains</h3>
+      <p>
+        Fuel the Body
+      </p>
+      <a href="/tiffanytrains.html" class+"button">Read more</a>
+    </div>
+    <div>
+      <h3>Tiffany Talks</h3>
+      <p>
+        Free the Mind
+      </p>
+      <a href="/tiffanytalks.html" class+"button">Read more</a>
+    </div>
+    <div>
+      <h3>Tiffany Travels</h3>
+      <p>
+        Feed the Soul
+      </p>
+      <a href="/tiffanytravels.html" class+"button">Read more</a>
+    </div>
+</section>
+
+<section id="whyidoit" class="grid">
+  <div class="col-12">
+    <h2>Why I do it</h2>
+  </div>
+  <div class="col-6">
+    <p>
+      This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me.
+    </p>
+  </div>
+  <div class="col-6">
+    <div class="grid-image" style="background-image:url('{{page.image_path}}')">
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="grid-image" style="background-image:url('{{page.image_path}}')">
+    </div>
+  </div>
+      <div class="col-6">
+        <p>
+          This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me. This is a little about me.
+        </p>
+      </div>
+</section>
+
+<section id="latestblogposts" class="grid">
+
+  <h2 class="col-12">Latest Blog Posts</h2>
+  {% for post in site.posts %}
+
+    <!-- stuff that you want to repeat for each post -->
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+
+    {% endfor %}
+
+</section>
