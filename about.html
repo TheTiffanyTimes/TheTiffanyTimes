@@ -1,7 +1,6 @@
 ---
 layout: default
 title: about
-image_path: /images/placeholder.jpg
 ---
 <section id="instagramfeed">
   <p>
@@ -15,7 +14,7 @@ image_path: /images/placeholder.jpg
     <h2>Who I Am</h2>
   </div>
   <div class="col-6">
-    <div class="grid-image" style="background-image:url('{{page.image_path}}')">
+    <div class="grid-image" style="background-image:url('/images/placeholder.jpg')">
     </div>
   </div>
     <div class="col-6">
@@ -29,28 +28,30 @@ image_path: /images/placeholder.jpg
         </p>
       </div>
       <div class="col-6">
-        <div class="grid-image" style="background-image:url('{{page.image_path}}')">
+        <div class="grid-image" style="background-image:url('/images/placeholder.jpg')">
         </div>
       </div>
 </section>
 
-<section id="whatido">
-  <h2>What I Do</h2>
-    <div>
+<section id="whatido" class="grid">
+  <div class="col-12">
+      <h2>What I Do</h2>
+  </div>
+    <div class="col-4">
       <h3>Tiffany Trains</h3>
       <p>
         Fuel the Body
       </p>
       <a href="/tiffanytrains.html" class+"button">Read more</a>
     </div>
-    <div>
+    <div class="col-4">
       <h3>Tiffany Talks</h3>
       <p>
         Free the Mind
       </p>
       <a href="/tiffanytalks.html" class+"button">Read more</a>
     </div>
-    <div>
+    <div class="col-4">
       <h3>Tiffany Travels</h3>
       <p>
         Feed the Soul
@@ -69,11 +70,11 @@ image_path: /images/placeholder.jpg
     </p>
   </div>
   <div class="col-6">
-    <div class="grid-image" style="background-image:url('{{page.image_path}}')">
+    <div class="grid-image" style="background-image:url('/images/placeholder.jpg')">
     </div>
   </div>
   <div class="col-6">
-    <div class="grid-image" style="background-image:url('{{page.image_path}}')">
+    <div class="grid-image" style="background-image:url('/images/placeholder.jpg')">
     </div>
   </div>
       <div class="col-6">

@@ -1,0 +1,94 @@
+---
+layout: default
+Title: Tiffany Talks
+---
+<section id="whatido" class="grid">
+  <div class="col-12">
+      <h2>What I Do</h2>
+  </div>
+    <div class="col-4">
+      <h3>Tiffany Trains</h3>
+      <p>
+        Fuel the Body
+      </p>
+      <a href="/tiffanytrains.html" class+"button">Read more</a>
+    </div>
+    <div class="col-4">
+      <h3>Tiffany Talks</h3>
+      <p>
+        Free the Mind
+      </p>
+      <a href="/tiffanytalks.html" class+"button">Read more</a>
+    </div>
+    <div class="col-4">
+      <h3>Tiffany Travels</h3>
+      <p>
+        Feed the Soul
+      </p>
+      <a href="/tiffanytravels.html" class+"button">Read more</a>
+    </div>
+</section>
+
+<section id="guestspeaker" class="grid">
+  <div class="col-12">
+    <h2>Professional Guest Speaker</h2>
+  </div>
+  <div class="col-6">
+    <h3>Battling Depression and Anxiety</h3>
+    <p>
+      Synopsis of presentation about mental health, depression as a strength not a weakness. Inspirational speach.
+    </p>
+  </div>
+  <div class="col-6">
+    <h3>How to Handle yourself on Social Media</h3>
+    <p>
+      Synopsis of presentation about social media, trolling, my experience, image selection, awareness and educate.
+    </p>
+  </div>
+
+</section>
+
+<section id="testimonials" class="grid">
+  <div class="testimonials col-12">
+    <h2>Testimonials</h2>
+  </div>
+  <div class="col-6 center">
+    <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
+  </div>
+  <div class="col-6">
+    <div class="background-image testimonial-circle" style="background-image: url('/images/placeholder.jpg')">
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="background-image testimonial-circle" style="background-image: url('/images/placeholder.jpg')">
+    </div>
+  </div>
+  <div class="col-6">
+    <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
+  </div>
+  <div class="col-6">
+    <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
+  </div>
+  <div class="col-6">
+    <div class="background-image testimonial-circle" style="background-image: url('/images/placeholder.jpg')">
+    </div>
+  </div>
+</section>
+
+<section id="relatedblogposts" class="grid">
+
+  <h2 class="col-12">Related Blog Posts</h2>
+  {% for post in site.posts %}
+
+    <!-- stuff that you want to repeat for each post -->
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+
+    {% endfor %}
+
+</section>
