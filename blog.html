@@ -5,7 +5,7 @@ layout: default
 <section id="latestblogposts" class="grid">
 
   <h2 class="col-12">Latest Blog Posts</h2>
-  {% for post in site.posts %}
+  {% for post in site.posts limit: 3 %}
 
     <!-- stuff that you want to repeat for each post -->
     <div class="col-4">
@@ -23,7 +23,7 @@ layout: default
 <section id="featuredblogposts" class="grid">
 
   <h2 class="col-12">Featured Blog Posts</h2>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:3 %}
 
     <!-- stuff that you want to repeat for each post -->
     <div class="col-4">
@@ -41,7 +41,7 @@ layout: default
 <section id="blogspostsbycategory" class="grid">
 
   <h2 class="col-12">Blogs by Category</h2>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:6 %}
 
     <!-- stuff that you want to repeat for each post -->
     <div class="col-4">

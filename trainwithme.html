@@ -1,0 +1,72 @@
+---
+layout: default
+Title: Train with Me
+image_path: /images/placeholder.jpg
+---
+<section id="equipment" class="grid">
+  <div class="col-12">
+    <h2>What Equipment Do You Have?</h2>
+  </div>
+  <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
+    <h3>Weights</h3>
+  </div>
+  <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
+    <h3>Stairs</h3>
+  </div>
+  <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
+    <h3>Chair</h3>
+  </div>
+  <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
+    <h3>Wall</h3>
+  </div>
+
+</section>
+
+<section id="trainingvideos" class="grid">
+
+  <h2 class="col-12">Equipment Specific Training Videos</h2>
+  {% for post in site.posts %}
+
+    <!-- stuff that you want to repeat for each post -->
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+    <div class="col-4">
+      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+      </div>
+      <h3> {{post.title}}</h3>
+      <p> {{post.excerpt}}</p>
+      <a href="{{post.url}}">Read More</a>
+    </div>
+
+    {% endfor %}
+
+</section>
+
+<section id="howitworks" class="grid">
+  <div class="testimonials col-12">
+    <h2>How It Works</h2>
+  </div>
+  <p>
+    This is a brief explanation of how to use the training videos to create a workout.
+  </p>
+  <a href="/downloadworksheet">Download Worksheet</a>
+</section>

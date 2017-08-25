@@ -28,6 +28,10 @@ section, header, footer {
   text-align:center;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .testimonial-circle {
   border-radius: 50%;
   width: 145px;

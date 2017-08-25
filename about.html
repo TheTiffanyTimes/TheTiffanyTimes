@@ -2,12 +2,6 @@
 layout: default
 title: about
 ---
-<section id="instagramfeed">
-  <p>
-    instagram feed plugin
-  </p>
-  <!---plugin for instagram--->
-</section>
 
 <section id="whoiam" class="grid">
   <div class="col-12">
@@ -87,7 +81,7 @@ title: about
 <section id="latestblogposts" class="grid">
 
   <h2 class="col-12">Latest Blog Posts</h2>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:3 %}
 
     <!-- stuff that you want to repeat for each post -->
     <div class="col-4">
