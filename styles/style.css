@@ -11,7 +11,7 @@ img{
   max-width: 100%;
 }
 
-section, header, footer {
+header, footer, section {
   padding: 5%;
   border: 1px solid orange;
 }
@@ -67,26 +67,6 @@ h1 {
 .hidden {
   display:none !important;
 }
-/*styling on what I do Section*/
-.whatido-circle {
-  border-radius: 50%;
-  border: 1px solid grey;
-  width: 145px;
-  height: 145px;
-  margin: auto;
-
-
-
-}
-
-/*styling on testimonial circles*/
-.testimonial-circle {
-  border-radius: 50%;
-  width: 145px;
-  height: 145px;
-  margin: auto;
-}
-
 
 
 /*Header Styles*/
@@ -99,17 +79,18 @@ header{
   background-position: center;
 }
 
-.socials
- {text-align:right;
-  font-size: 30px;
+header .socials {
+    text-align:right;
 }
 .socials .fa {
   color:mediumvioletred;
+  font-size: 30px;
+  transition: all 1s;
+  padding: 0.2rem;
 }
 
 .socials .fa:hover{
   color:grey;
-  font-size:40px;
 }
 
 #home h1 {
@@ -117,6 +98,86 @@ header{
   font-size: 80px;
   font-weight:bold;
 }
+
+
+/*styling on what I do Section*/
+
+#whatido {
+  padding-bottom: 20%;
+}
+
+.circle-outer {
+  background-position: center;
+  background-size:cover;
+  border-radius: 50%;
+  border: 1px solid grey;
+  padding-top:28%;
+  margin:2%;
+  position: relative;
+  opacity: 0.6
+}
+
+.circle-inner {
+
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  border-radius: 50%;
+  padding: 20% 1%;
+  text-align:center;
+  transition: background: 0.5s;
+  opacity: 1;
+}
+
+.circle-inner p {
+  color: rgba(0,0,0,0);
+  transition: background: 0.5s;
+}
+
+.circle-inner:hover {
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.circle-inner:hover p {
+  color: rgba(255,255,255,1);
+}
+
+.left-circle {
+    left: 23%;
+    background-image: url('../Images/header.jpg');
+}
+.inactive-circle{
+  background-color: rgba(60,60,60,1);
+
+}
+.middle-circle {
+    top: 17vw;
+  z-index:9;
+  background-image: url('../Images/header.jpg');
+}
+.right-circle {
+    right: 23%;
+    background-image: url('../Images/header.jpg');
+}
+
+/*styling on testimonial circles*/
+.testimonial-circle {
+  border-radius: 50%;
+  width: 145px;
+  height: 145px;
+  margin: auto;
+}
+/* Video */
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; overflow:
+  hidden; max-width: 100%; }
+  .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 
 

@@ -4,7 +4,6 @@ title: Rottnest Island
 tags: Travel, Australia, Rottnest Island
 categories:
   - travel
-  - featured
 
 description: This is a short description of each blog post
 image_path: /images/placeholder.jpg
