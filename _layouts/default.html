@@ -3,9 +3,7 @@
   <head>
     <title>TheTiffanyTimes {{page.title}}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
-    <!--carousel-->
-    <link rel="stylesheet" href="/styles/owl.carousel.min.css">
-    <link rel="stylesheet" href="/styles/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:300" rel="stylesheet">
     <!--My Styles-->
     <link rel="stylesheet" href="/styles/style.css" />
     <!-- Font awesome scripts-->
@@ -16,59 +14,34 @@
 <body>
 
   <header id="home">
-    <nav>
-      <div class="socials">
-        <a href="https://www.instagram.com/tiffany_janes/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/Thetiffanytimes-1131799556915920/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="mailto:hello@thetiffanytimes.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-      </div>
-    </nav>
-
-    <nav>
-      <div class="menu grid-spaceBetween">
-      <div class="logo col_sm-3">
+    <nav class="menu grid-spaceBetween">
+      <div class="logo col-6">
         <a href="/index.html"><img src="/images/logo.png" alt="my logo" /></a>
       </div>
-      <div class="col mob-hide">
+      <div class="col-6 mob-hide">
         <a href="/about.html">About</a>
-      </div>
-      <div class="col mob-hide">
         <a href="/blog.html">Blog</a>
-      </div>
-      <div class="col mob-hide dropdownfinder">
-        <a href="/trainwithme.html">Train with me</a>
-        <div class="dropdownbox">
-          <ul>
-            <li>
-              <a href="/tiffanytrains.html">Tiffany Trains</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/trainwithme.html">Training Program</a>
-            </li>
-          </ul>
+        <div class="dropdownfinder">
+          <a href="/trainwithme.html">Train with me</a>
+          <div class="dropdownbox">
+                <a href="/tiffanytrains.html">Tiffany Trains</a>
+                <a href="/trainwithme.html">Training Program</a>
+          </div>
         </div>
-      </div>
-      <div class="col mob-hide dropdownfinder">
-        <a href="/workwithme.html">Work with me</a>
-        <div class="dropdownbox">
-          <ul>
-            <li>
+        <div class="dropdownfinder">
+          <a href="/workwithme.html">Work with me</a>
+          <div class="dropdownbox">
               <a href="/tiffanytalks.html">Tiffany Talks</a>
-            </li>
-            <li>
               <a href="/tiffanytravels.html">Tiffany Travels</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
               <a href="/workwithme.html">Booking Form</a>
-            </li>
-          </ul>
+        </div>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/tiffany_janes/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/Thetiffanytimes-1131799556915920/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="mailto:hello@thetiffanytimes.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
         </div>
       </div>
-    </div>
     </nav>
 
     <!---burger menu Navs--->
@@ -111,6 +84,8 @@
 
   <footer id="subscribe">
     <h2>Let's Connect</h2>
+
+    {% if page.contact-form %}
     <!--mail chimp subscribe form-->
     <!-- Begin MailChimp Signup Form -->
     <h3> Join my email list</h3>
@@ -125,6 +100,8 @@
         </div>
       </form>
   </div>
+
+  {% endif %}
 
 <!--End mc_embed_signup-->
     <!--mail chimp subscribe form ends here-->

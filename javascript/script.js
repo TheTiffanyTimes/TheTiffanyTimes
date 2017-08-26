@@ -16,7 +16,7 @@ $(document).ready(function(){
     e.preventDefault();
     console.log("We clicked it");
 
-    $('.portfolio-filter.active').removeClass('active');
+    $('.portfolio-filter .active').removeClass('active');
     $(this).addClass('active');
 
     var filterVal = $(this).text().toLowerCase().replace(' ','-');

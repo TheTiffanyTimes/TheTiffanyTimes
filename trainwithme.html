@@ -25,18 +25,17 @@ image_path: /images/placeholder.jpg
 
 </section>
 
-<section id="trainingvideos" class="grid">
+<section id="trainingvideos" class="grid filter-box">
 
   <h2 class="col-12">Equipment Specific Training Videos</h2>
-  {% for post in site.posts %}
+  {% for workout in site.workouts %}
 
     <!-- stuff that you want to repeat for each post -->
-    <div class="col-4 filter-item {{post.filter-class}}">
-      <div class="filter-image " style="background-image:url('{{post.image_path}}')">
+    <div class="col-4 filter-item {{workout.filter-class}}">
+      <div class="filter-image" style="background-image:url('{{workout.image_path}}')">
       </div>
-      <h3> {{post.title}}</h3>
-      <p> {{post.excerpt}}</p>
-      <a href="{{post.url}}">Read More</a>
+      <h3> {{workout.title}}</h3>
+      <a href="{{workout.url}}">Read More</a>
     </div>
 
     {% endfor %}

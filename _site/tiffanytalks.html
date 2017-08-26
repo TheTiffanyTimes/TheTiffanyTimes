@@ -3,9 +3,7 @@
   <head>
     <title>TheTiffanyTimes </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
-    <!--carousel-->
-    <link rel="stylesheet" href="/styles/owl.carousel.min.css">
-    <link rel="stylesheet" href="/styles/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:300" rel="stylesheet">
     <!--My Styles-->
     <link rel="stylesheet" href="/styles/style.css" />
     <!-- Font awesome scripts-->
@@ -16,59 +14,34 @@
 <body>
 
   <header id="home">
-    <nav>
-      <div class="socials">
-        <a href="https://www.instagram.com/tiffany_janes/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/Thetiffanytimes-1131799556915920/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="mailto:hello@thetiffanytimes.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-      </div>
-    </nav>
-
-    <nav>
-      <div class="menu grid-spaceBetween">
-      <div class="logo col_sm-3">
+    <nav class="menu grid-spaceBetween">
+      <div class="logo col-6">
         <a href="/index.html"><img src="/images/logo.png" alt="my logo" /></a>
       </div>
-      <div class="col mob-hide">
+      <div class="col-6 mob-hide">
         <a href="/about.html">About</a>
-      </div>
-      <div class="col mob-hide">
         <a href="/blog.html">Blog</a>
-      </div>
-      <div class="col mob-hide dropdownfinder">
-        <a href="/trainwithme.html">Train with me</a>
-        <div class="dropdownbox">
-          <ul>
-            <li>
-              <a href="/tiffanytrains.html">Tiffany Trains</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/trainwithme.html">Training Program</a>
-            </li>
-          </ul>
+        <div class="dropdownfinder">
+          <a href="/trainwithme.html">Train with me</a>
+          <div class="dropdownbox">
+                <a href="/tiffanytrains.html">Tiffany Trains</a>
+                <a href="/trainwithme.html">Training Program</a>
+          </div>
         </div>
-      </div>
-      <div class="col mob-hide dropdownfinder">
-        <a href="/workwithme.html">Work with me</a>
-        <div class="dropdownbox">
-          <ul>
-            <li>
+        <div class="dropdownfinder">
+          <a href="/workwithme.html">Work with me</a>
+          <div class="dropdownbox">
               <a href="/tiffanytalks.html">Tiffany Talks</a>
-            </li>
-            <li>
               <a href="/tiffanytravels.html">Tiffany Travels</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
               <a href="/workwithme.html">Booking Form</a>
-            </li>
-          </ul>
+        </div>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/tiffany_janes/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/Thetiffanytimes-1131799556915920/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="mailto:hello@thetiffanytimes.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
         </div>
       </div>
-    </div>
     </nav>
 
     <!---burger menu Navs--->
@@ -157,12 +130,15 @@
 
 </section>
 
-<section id="testimonials" class="grid">
-  <div class="testimonials col-12">
+<section class="grid testimonials">
+  <div class="col-12">
     <h2>Testimonials</h2>
   </div>
   <div class="col-6 center">
-    <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
+    <p>"Tiffany was professional and always smiling, we would be happy to work with her again"</p>
+    <p class="testimonial-author">
+      - The Hive Tribe
+    </p>
   </div>
   <div class="col-6">
     <div class="background-image testimonial-circle" style="background-image: url('/images/placeholder.jpg')">
@@ -173,10 +149,16 @@
     </div>
   </div>
   <div class="col-6">
-    <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
+    <p>"Tiffany was professional and always smiling, we would be happy to work with her again" </p>
+    <p class="testimonial-author">
+      - The Hive Tribe
+    </p>
   </div>
   <div class="col-6">
-    <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
+    <p>"Tiffany was professional and always smiling, we would be happy to work with her again"</p>
+    <p class="testimonial-author">
+      - The Hive Tribe
+    </p>
   </div>
   <div class="col-6">
     <div class="background-image testimonial-circle" style="background-image: url('/images/placeholder.jpg')">
@@ -189,24 +171,13 @@
   <h2 class="col-12">Related Blog Posts</h2>
   
 
-    <!-- stuff that you want to repeat for each post -->
-    <div class="col-4">
-      <div class="grid-image" style="background-image:url('/images/placeholder.jpg')">
-      </div>
-      <h3> My third blog post</h3>
-      <p> <h2 id="this-is-a-sub-heading">This is a sub-heading</h2>
-
-</p>
-      <a href="/talks/2017/04/07/third-blog-post.html">Read More</a>
-    </div>
-
-    
-
 </section>
 
 
   <footer id="subscribe">
     <h2>Let's Connect</h2>
+
+    
     <!--mail chimp subscribe form-->
     <!-- Begin MailChimp Signup Form -->
     <h3> Join my email list</h3>
@@ -221,6 +192,8 @@
         </div>
       </form>
   </div>
+
+  
 
 <!--End mc_embed_signup-->
     <!--mail chimp subscribe form ends here-->
