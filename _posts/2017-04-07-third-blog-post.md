@@ -1,9 +1,12 @@
 ---
 layout: post
 title: My third blog post
-tags: Travel, Fitness
+tags: Travel, Fitness, Dubai
+categories:
+  - talks
 description: This is a short description of each blog post
 image_path: /images/placeholder.jpg
+filter-class: dubai
 ---
 
 ## This is a sub-heading

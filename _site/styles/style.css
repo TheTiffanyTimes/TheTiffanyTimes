@@ -1,3 +1,5 @@
+
+/*--------------Universal Styles--------------*/
 * {
   padding: 0;
   margin:0;
@@ -14,7 +16,26 @@ section, header, footer {
   border: 1px solid orange;
 }
 
-.grid-image {
+h3 {
+  text-align:center;
+  font-size: 30px;
+}
+
+h2 {
+  text-align:center;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+h1 {
+  text-align:center;
+  font-size:60px;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+.filter-image, .grid-image {
   padding-bottom: 50%;
   background-size:cover;
 }
@@ -32,9 +53,153 @@ section, header, footer {
   padding: 0;
 }
 
+/*styling on drop menus*/
+.dropdownbox {
+  position:absolute;
+  display:none;
+
+}
+
+.dropdownfinder:hover .dropdownbox {
+  display:block;
+}
+
+.hidden {
+  display:none !important;
+}
+/*styling on what I do Section*/
+.whatido-circle {
+  border-radius: 50%;
+  border: 1px solid grey;
+  width: 145px;
+  height: 145px;
+  margin: auto;
+
+
+
+}
+
+/*styling on testimonial circles*/
 .testimonial-circle {
   border-radius: 50%;
   width: 145px;
   height: 145px;
   margin: auto;
+}
+
+
+
+/*Header Styles*/
+
+header{
+  background-image:url('../Images/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}
+
+.socials
+ {text-align:right;
+  font-size: 30px;
+}
+.socials .fa {
+  color:mediumvioletred;
+}
+
+.socials .fa:hover{
+  color:grey;
+  font-size:40px;
+}
+
+#home h1 {
+  text-align:center;
+  font-size: 80px;
+  font-weight:bold;
+}
+
+
+
+/*------------------JAVA SCRIPT-----------------------*/
+/*Burger Menu*/
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+.burger-menu li{list-style:none}
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  padding: 8px;
+}
+.burger-button span{
+  width: 25px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+.burger-top{
+  top: 02px;
+}
+.burger-bottom{
+  bottom: 02.5px;
+}
+.active .burger-top{
+  transform: rotateZ(45deg);
+  top: 8px;
+  border-color: red;
+}
+.active .burger-middle{
+  opacity:0;
+}
+.active .burger-bottom{
+  transform: rotateZ(135deg);
+  bottom: 8px;
+  border-color: red;
+}
+
+/*-----------Navs to burger menu on mobile---------------*/
+
+.mob-show{
+  display: none;
+}
+
+@media all and (max-width:465px){
+  .mob-show{
+    display: block;
+  }
+  .mob-hide{
+    display:none!important;
+  }
+  .socials {
+    padding-right: 7%
+  }
 }

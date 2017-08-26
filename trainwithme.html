@@ -6,21 +6,21 @@ image_path: /images/placeholder.jpg
 <div class="pageheading">
   <h1>train with me</h1>
 </div>
-<section id="equipment" class="grid">
+<section id="equipment" class="grid portfolio-filter">
   <div class="col-12">
     <h2>What Equipment Do You Have?</h2>
   </div>
   <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
-    <h3>Weights</h3>
+    <a href="#">Weights</a>
   </div>
   <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
-    <h3>Stairs</h3>
+  <a href="#">Stairs</a>
   </div>
   <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
-    <h3>Chair</h3>
+    <a href="#">Ladder</a>
   </div>
   <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
-    <h3>Wall</h3>
+    <a href="#">Chair</a>
   </div>
 
 </section>
@@ -31,29 +31,8 @@ image_path: /images/placeholder.jpg
   {% for post in site.posts %}
 
     <!-- stuff that you want to repeat for each post -->
-    <div class="col-4">
-      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
-      </div>
-      <h3> {{post.title}}</h3>
-      <p> {{post.excerpt}}</p>
-      <a href="{{post.url}}">Read More</a>
-    </div>
-    <div class="col-4">
-      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
-      </div>
-      <h3> {{post.title}}</h3>
-      <p> {{post.excerpt}}</p>
-      <a href="{{post.url}}">Read More</a>
-    </div>
-    <div class="col-4">
-      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
-      </div>
-      <h3> {{post.title}}</h3>
-      <p> {{post.excerpt}}</p>
-      <a href="{{post.url}}">Read More</a>
-    </div>
-    <div class="col-4">
-      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+    <div class="col-4 filter-item {{post.filter-class}}">
+      <div class="filter-image " style="background-image:url('{{post.image_path}}')">
       </div>
       <h3> {{post.title}}</h3>
       <p> {{post.excerpt}}</p>
@@ -81,7 +60,7 @@ image_path: /images/placeholder.jpg
 	        <input class="col-8" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="enter email address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div class="col-8" style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f58c19f03664cfe7506f75c33_f4c36ab220" tabindex="-1" value=""></div>
-            <div class="col-8" class="clear"><input type="submit" value="Subscribe" name="YO" id="mc-embedded-subscribe" class="button"></div>
+            <div class="col-8" class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
         </div>
 </form>
 </div>

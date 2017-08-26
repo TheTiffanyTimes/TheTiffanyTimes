@@ -1,7 +1,11 @@
 ---
 layout: post
 title: My second blog post
-tags: Travel, Fitness
+tags: Travel, Fitness, Australia
+categories:
+  - travel
+  - featured
+  
 description: This is a short description of each blog post
 image_path: /images/placeholder.jpg
 ---

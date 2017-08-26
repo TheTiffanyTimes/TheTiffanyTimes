@@ -42,6 +42,9 @@ Title: Tiffany Travels
 
 </section>
 
+<!-- LightWidget WIDGET -->
+<script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/de99c641653f56e681f4b72702244359.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
 <section id="travelquotes" class="grid">
   <div class="testimonials col-12">
     <h2>My Favourite Travel Quotes</h2>
@@ -69,33 +72,33 @@ Title: Tiffany Travels
   </div>
 </section>
 
-<section id="desinations" class="grid">
+<section id="desinations" class="grid portfolio-filter">
   <div class="col-12">
-    <h2>What Equipment Do You Have?</h2>
+    <h2>Which country would you like to know about?</h2>
   </div>
   <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
-    <h3>Australia</h3>
+    <a href="#">Australia</a>
   </div>
   <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
-    <h3>Indonesia</h3>
+    <a href="#">Indonesia</a>
   </div>
   <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
-    <h3>Dubai</h3>
+    <a href="#">Dubai</a>
   </div>
   <div class="col-3 background-image" style="background-image: url('/images/placeholder.jpg')">
-    <h3>United States of America</h3>
+    <a href="#">United States of America</a>
   </div>
 
 </section>
-<section id="relatedblogposts" class="grid">
+<section id="relatedblogposts" class="grid filter-box">
 
   <h2 class="col-12">Filter by destination</h2>
 
-  {% for post in site.posts %}
+  {% for post in site.categories.travel limit:3 %}
 
     <!-- stuff that you want to repeat for each post -->
-    <div class="col-4">
-      <div class="grid-image" style="background-image:url('{{post.image_path}}')">
+    <div class="col-4 filter-item {{post.filter-class}}">
+      <div class="grid-image grid-item {{post.destination}}" style="background-image:url('{{post.image_path}}')">
       </div>
       <h3> {{post.title}}</h3>
       <p> {{post.excerpt}}</p>

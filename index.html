@@ -4,7 +4,7 @@ title: Home
 ---
 
   <section id="about">
-    <div class="border">
+    <div class="border padding-top">
       <h2>About Me</h2>
       <p>
         This is a litte about me and where I write a little blurb about me. To find out more you will need to click on the read more button.
@@ -46,7 +46,7 @@ title: Home
     {% for post in site.posts limit:3 %}
 
       <!-- stuff that you want to repeat for each post -->
-      <div class="col-4">
+      <div class="col-4_xs-12">
         <div class="grid-image" style="background-image:url('{{post.image_path}}')">
         </div>
         <h3> {{post.title}}</h3>
@@ -62,24 +62,24 @@ title: Home
     <div class="testimonials col-12">
       <h2>Testimonials</h2>
     </div>
-    <div class="col-6 center">
+    <div class="col-6_xs-12 center">
       <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
     </div>
-    <div class="col-6">
+    <div class="col-6_xs-12">
       <div class="background-image testimonial-circle" style="background-image: url('/images/placeholder.jpg')">
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-6_xs-12">
       <div class="background-image testimonial-circle" style="background-image: url('/images/placeholder.jpg')">
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-6_xs-12">
       <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
     </div>
-    <div class="col-6">
+    <div class="col-6_xs-12">
       <h3>"Tiffany was professional and always smiling, we would be happy to work with her again" - The Hive Tribe</h3>
     </div>
-    <div class="col-6">
+    <div class="col-6_xs-12">
       <div class="background-image testimonial-circle" style="background-image: url('/images/placeholder.jpg')">
       </div>
     </div>
