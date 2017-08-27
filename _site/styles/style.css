@@ -135,7 +135,7 @@ p {
 /*Header Styles*/
 
 header{
-  background-image:url('../Images/header.jpg');
+  background-image:url('../images/header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
