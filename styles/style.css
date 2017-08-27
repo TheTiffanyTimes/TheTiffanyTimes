@@ -95,8 +95,12 @@ p {
 
 .logo img {
   max-width: 120px
-  padding: 2%;
+  padding: 1%;
 }
+.div.logo {
+    padding: 2%;
+}
+
 .menu a {
   display: inline-block;
   text-decoration: none;
