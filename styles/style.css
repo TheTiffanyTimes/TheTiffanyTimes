@@ -94,7 +94,8 @@ p {
 /*styling on drop menus*/
 
 .logo img {
-  max-width: 120px;
+  max-width: 120px
+  padding: 2%;
 }
 .menu a {
   display: inline-block;
