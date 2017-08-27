@@ -213,7 +213,7 @@ header .socials {
 
 .left-circle {
     left: 23%;
-    background-image: url('../Images/header.jpg');
+    background-image: url('/images/header.jpg');
 }
 .inactive-circle{
   background-color: rgba(60,60,60,1);
