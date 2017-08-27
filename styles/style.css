@@ -222,11 +222,11 @@ header .socials {
 .middle-circle {
     top: 17vw;
   z-index:9;
-  background-image: url('../Images/header.jpg');
+  background-image: url('/images/header.jpg');
 }
 .right-circle {
     right: 23%;
-    background-image: url('../Images/header.jpg');
+    background-image: url('/images/header.jpg');
 }
 
 /*styling on testimonial circles*/
