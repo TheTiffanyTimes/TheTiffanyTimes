@@ -94,8 +94,9 @@ p {
 /*styling on drop menus*/
 
 .logo img {
-  max-width: 120px;
+  max-width: 120px
 }
+
 .menu a {
   display: inline-block;
   text-decoration: none;
@@ -135,7 +136,7 @@ p {
 /*Header Styles*/
 
 header{
-  background-image:url('../Images/header.jpg');
+  background-image:url('/images/header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -218,7 +219,7 @@ header .socials {
 
 .left-circle {
     left: 23%;
-    background-image: url('../Images/header.jpg');
+    background-image: url('/images/header.jpg');
 }
 .inactive-circle{
   background-color: rgba(60,60,60,1);
@@ -227,11 +228,11 @@ header .socials {
 .middle-circle {
     top: 17vw;
   z-index:9;
-  background-image: url('../Images/header.jpg');
+  background-image: url('/images/header.jpg');
 }
 .right-circle {
     right: 23%;
-    background-image: url('../Images/header.jpg');
+    background-image: url('/images/header.jpg');
 }
 
 /*styling on testimonial circles*/
