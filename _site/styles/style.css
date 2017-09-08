@@ -30,6 +30,7 @@ section {
 h1, h2, h3, h4 {
     font-family: 'Abril Fatface', cursive;
     margin: 0.5rem 0;
+    font-weight:normal;
 }
 
 h3 {
@@ -94,6 +95,10 @@ p {
 
 .margin-auto {
     margin: auto;
+}
+
+.pageheading {
+  background-color: rgba(250,240,241,1);
 }
 /*styling on drop menus*/
 
@@ -181,7 +186,7 @@ header .socials {
 .socials .fa:hover{
   color:grey;
 }
-/*styling on abou me seciton*/
+/*styling on about me seciton*/
 #about {
   background-image:url('/images/aboutme.jpg');
   background-repeat: no-repeat;
@@ -190,8 +195,20 @@ header .socials {
   background-position: 70% 45%;
 }
 
+#whoiam {
+  background-color: rgba(250,240,241,1);
+}
+
+#whyidoit {
+  background-color: rgba(250,240,241,1);
+}
+
 #about .col-5_sm-12 {
   background-color: rgba(255, 255, 255, 0.44);
+}
+
+#latestblogposts.aboutposts {
+  background-color: rgb(245,245,245);
 }
 
 
@@ -199,7 +216,7 @@ header .socials {
 /*styling on what I do Section*/
 
 #whatido {
-  padding-bottom: 28%;
+  padding-bottom: 31%;
 }
 
 #whatido h3 {
@@ -210,6 +227,10 @@ header .socials {
   font-size: 22px;
 }
 
+#whatido {
+  background-color: rgb(245,245,245);
+}
+
 .circle-outer {
   background-position: center;
   background-size:cover;
@@ -218,7 +239,7 @@ header .socials {
   padding-top:35%;
   margin:-2%;
   position: relative;
-  opacity: 0.6
+  opacity: 0.9
 }
 
 .circle-inner {
@@ -232,7 +253,7 @@ header .socials {
   padding: 20% 1%;
   text-align:center;
   transition: background-image: 0.5s;
-  opacity: 1;
+  background-color: rgba(255,255,255,0.2);
 }
 
 .circle-inner p {
@@ -241,7 +262,7 @@ header .socials {
 }
 
 .circle-inner:hover {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(245, 196, 179,0.8);
   color: white;
 }
 
@@ -255,7 +276,7 @@ header .socials {
 
 .left-circle {
     left: 18%;
-    background-image: url('/images/header.jpg');
+    background-image: url('/images/tiffanytalks.jpg');
 }
 .inactive-circle{
   background-color: rgba(60,60,60,1);
@@ -264,20 +285,36 @@ header .socials {
 .middle-circle {
     top: 25vw;
   z-index:9;
-  background-image: url('/images/header.jpg');
+  background-image: url('/images/tiffanytravels.jpg');
 }
 .right-circle {
     right: 18%;
-    background-image: url('/images/header.jpg');
+    background-image: url('/images/tiffanytrains.jpg');
+}
+
+/*styling on latest blog post*/
+#latestblogposts {
+  background-color: rgb(250,240,241);
 }
 
 /*styling on testimonial circles*/
+.testimonials {
+  background-color: rgb(245,245,245);
+}
+
 .testimonial-circle {
   border-radius: 50%;
   width: 145px;
   height: 145px;
   margin: auto;
 }
+
+/*styling on contacts*/
+
+footer#subscribe {
+  background-color: rgb(250,240,241);
+}
+
 /* Video */
 
 .embed-container {
