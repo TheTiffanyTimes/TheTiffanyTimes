@@ -98,7 +98,11 @@ p {
 }
 
 .pageheading {
-  background-color: rgba(250,240,241,1);
+  background-image:url('/images/aboutme.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25vh;
+  background-position: 100% 38%;
 }
 /*styling on drop menus*/
 
@@ -292,10 +296,25 @@ header .socials {
     background-image: url('/images/tiffanytrains.jpg');
 }
 
-/*styling on latest blog post*/
+/*styling on blog posts*/
 #latestblogposts {
   background-color: rgb(250,240,241);
 }
+#featuredblogposts {
+  background-color: rgb(245,245,245);
+}
+
+.talksblog {
+  background-color: rgb(250,240,241);
+}
+.travelsblog {
+  background-color: rgb(245,245,245);
+}
+.trainsblog {
+  background-color: rgb(250,240,241);
+}
+
+
 
 /*styling on testimonial circles*/
 .testimonials {
